@@ -40,36 +40,38 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a>Home</a></li>
-                <li><a>The Ceremony</a></li>
-                <li><a>The Reception</a></li>
-                <li><a>The Wedding Party</a></li>
-                <li><a>Guest Information</a></li>
-                <li><a>Registry</a></li>
+                <li><a href="javascript:void(0)" class="home">Home</a></li>
+                <li><a href="javascript:void(0)" class="registry">The Registries</a></li>
+                <li><a href="javascript:void(0)" class="ceremony">The Ceremony</a></li>
+                <li><a href="javascript:void(0)" class="reception">The Reception</a></li>
+                <li><a href="javascript:void(0)" class="guest-info">Guest Information</a></li>
+                <li><a href="javascript:void(0)" class="wedding-party">The Wedding Party</a></li>
               </ul>
             </div>
           </div>
         </div>
         <ul class="nav nav-desktop">
           <li>|</li>
-          <li><a href="#" id="home">Home</a></li>
+          <li><a href="javascript:void(0)" class="home" id="home-link">Home</a></li>
           <li>|</li>
-          <li><a href="#" id="ceremony">The Ceremony</a></li>
+          <li><a href="javascript:void(0)" class="registry" id="registry-link">The Registries</a></li>
           <li>|</li>
-          <li><a href="#" id="reception">The Reception</a></li>
+          <li><a href="javascript:void(0)" class="ceremony" id="ceremony-link">The Ceremony</a></li>
+
+
         </ul>
         <img src="images/weddinglogo.png" alt="N&M"/>
         <ul class="nav nav-desktop">
-          <li><a href="#" id="party">The Wedding Party</a></li>
+          <li><a href="javascript:void(0)" class="reception" id="reception-link">The Reception</a></li>
           <li>|</li>
-          <li><a href="#" id="guest">Guest Information</a></li>
+          <li><a href="javascript:void(0)" class="guest-info" id="info-link">Guest Information</a></li>
           <li>|</li>
-          <li><a href="#" id="registry">Registry</a></li>
+          <li><a href="javascript:void(0)" class="wedding-party" id="party-link">The Wedding Party</a></li>
           <li>|</li>
         </ul>
       </div>
     </div>
-    <div class="jumbotron">
+    <div class="jumbotron" id="home">
       <div class="overlay">
         <div class="container">
           <div class="text-box">
@@ -81,45 +83,152 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row registry-row" id="registry">
         <div class="col-xs-12">
           <div class="row-container">
             <span class="line"></span>
-            <h3>The Ceremony</h3>
+            <h3>The Registries</h3>
             <span class="line"></span>
           </div>
-        </div>
-        <div class="col-xs-6 col-sm-5 col-lg-4 detail-img">
-          <img src="images/churchbw.jpg" alt="Mulberry"/>
-        </div>
-        <div class="col-sm-7 col-lg-8 detail-text">
-          <h4>Mulberry Street United Methodist Church</h4>
-          <h6>719 Mulberry St, 31201</h6>
-          <h6><a href="#">mulberrymethodist.org</a></h6>
-          <h5>Guest Information</h5>
-          <p>Park where youre supposed to Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio lorem, mattis at aliquet a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio lorem, mattis at aliquet a.</p>
+          <a href="http://www1.bloomingdales.com/registry/wedding/guest/?registryId=6462188" target="_blank">
+            <img src="images/registry/bloomingdales.jpg" alt="Bloomingdales"/>
+          </a>
+          <a href="http://shop.previewsinteriors.com/Sara-Norris-Clay-and-Matthew-Douglas-Morrison_c215.htm" target="_blank">
+            <img src="images/registry/previews.jpg" alt="Previews Interiors"/>
+          </a>
+          <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542687419" target="_blank">
+            <img src="images/registry/bbb.jpg" alt="Bed Bath and Beyond"/>
+          </a>
+          <a href="http://www.potterybarn.com/registry/3762333/registry-list.html" target="_blank">
+            <img src="images/registry/pb.jpg" alt="Pottery Barn"/>
+          </a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="row-container">
+      <div class="row col-sml-6 col-sm-6" id="ceremony">
+        <div class="row-container">
+          <span class="line"></span>
+          <h3>The Ceremony</h3>
+          <span class="line"></span>
+        </div>
+        <h4>Mulberry Street United Methodist Church</h4>
+        <img src="images/church.jpg" alt="Mulberry"/>
+        <div class="detail-text">
+          <h6>719 Mulberry St, 31201</h6>
+          <h6><a href="http://www.mulberrymethodist.org" target="_blank">Website</a></h6>
+          <p>Stately old Mulberry Street United Methodist Church, a landmark in Macon and Georgia Methodism, stands at the corner of First and Mulberry Street in downtown Macon. Parking is available in the lot on the corner of Mulberry and 1st, as well as on the street.</p>
+        </div>
+      </div>
+      <div class="row col-sml-6 col-sm-6" id="reception">
+        <div class="row-container">
             <span class="line"></span>
             <h3>The Reception</h3>
             <span class="line"></span>
           </div>
-        </div>
-        <div class="col-xs-6 col-sm-5 col-lg-4 detail-img">
-          <img src="images/clubbw.jpg" alt="Mulberry"/>
-        </div>
-        <div class="col-sm-7 col-lg-8 detail-text">
-          <h4>Idle Hour Country Club</h4>
-          <h6>251 Idle Hour Drive, 31210</h6>
-          <h6><a href="#">idlehourclub.com</a></h6>
-          <h5>Guest Information</h5>
-          <p>Park where youre supposed to Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio lorem, mattis at aliquet a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio lorem, mattis at aliquet a.</p>
+        <h4>Idle Hour Country Club</h4>
+        <img src="images/club.jpg" alt="Mulberry"/>
+        <div class="detail-text">
+          <h6>251 Idle Hour Dr, 31210</h6>
+          <h6><a href="http://www.idlehourclub.com" target="_blank">Website</a></h6>
+          <p>Generations of the Macon’s business, civic, and political leaders have found happiness, relaxation, and camaraderie in the clubhouse, on the tennis courts, and on the golf course of one of the South’s oldest and finest country clubs. Parking is available on-site in the front of the clubhouse.</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row info" id="guest-info">
+        <div class="col-xs-12">
+          <div class="row-container">
+            <span class="line"></span>
+            <h3>Guest Information</h3>
+            <span class="line"></span>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4>Hotel Information</h4>
+            <div class="col-xs-12 no-padding">
+              <img src="images/registry/mariott.jpg" alt="Mariott"/>
+              <div class="detail-text">
+                <h5>Mariott City Center</h5>
+                <h6>240 Coliseum Drive, 31217</h6>
+                <h6>Reservations - (800)228-9290</h6>
+                <h6>Local - (478) 621-5300</h6>
+                <h6><a href="http://www.marriott.com/hotels/travel/mcnfs-macon-marriott-city-center/">Website</a></h6>
+                <p>The Clay-Morrison Wedding block is available until 2/10/16</p>
+              </div>
+            </div>
+            <div class="col-xs-12 no-padding">
+              <img src="images/1842.jpg" alt="1842"/>
+              <div class="detail-text">
+                <h5>1842 Inn</h5>
+                <h6>353 College Street, 31201</h6>
+                <h6>Reservations - (877)452-6599</h6>
+                <h6>Local - (478)741-1842</h6>
+                <h6><a href="http://www.1842inn.com/">Website</a></h6>
+                <p>Antibellum-style bed and breakfast</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4>Restaurants We Like</h4>
+            <div class="col-xs-12 no-padding">
+              <img src="images/dovetail.jpg" alt="Dovetail"/>
+              <div class="detail-text">
+                <h5>Dovetail</h5>
+                <h6>543 Cherry St, 31201</h6>
+                <h6>(478) 238-4693</h6>
+                <h6><a href="http://www.dovetailmacon.com/" target="_blank">Website</a></h6>
+                <p>Farm-to-table southern fare and craft cocktails.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 no-padding">
+              <img src="images/rookery.jpg" alt="Rookery"/>
+              <div class="detail-text">
+                <h5>The Rookery</h5>
+                <h6>543 Cherry St, 31201</h6>
+                <h6>478-746-8658</h6>
+                <h6><a href="http://www.rookerymacon.com/" target="_blank">Website</a></h6>
+                <p>Great burgers. Craft beers.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 no-padding">
+              <img src="images/foj.jpg" alt="FOJ"/>
+              <div class="detail-text">
+                <h5>Fountain of Juice</h5>
+                <h6>4123 Forsyth Road, 31210</h6>
+                <h6>(478) 755-5000</h6>
+                <h6><a href="http://www.fountainofjuice.it/" target="_blank">Website</a></h6>
+                <p>Organic Soups, Salads, Sandwiches, Baked Goods, Juices, and Smoothies.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h4>Things To Do</h4>
+            <div class="col-xs-12 no-padding">
+              <img src="images/sports.jpg" alt="Sports"/>
+              <div class="detail-text">
+                <h5>Georgia Sports Hall Of Fame</h5>
+                <h6>301 Cherry Street, 31201</h6>
+                <h6><a href="http://georgiasportshalloffame.com/" target="_blank">Website</a></h6>
+              </div>
+            </div>
+            <div class="col-xs-12 no-padding">
+              <img src="images/tapd.png" alt="Tapd"/>
+              <div class="detail-text">
+                <h5>Just Tap'd</h5>
+                <h6>488 1st, 31201</h6>
+                <h6><a href="http://www.justtapd.com/" target="_blank">Website</a></h6>
+                <p>Growler bar with a great beer selection.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 no-padding">
+              <img src="images/allman.jpg" alt="Allman"/>
+              <div class="detail-text">
+                <h5>Allman Brothers House and Museum</h5>
+                <h6>2321 Vineville Ave, 31204</h6>
+                <h6><a href="http://www.thebighousemuseum.com/" target="_blank">Website</a></h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row wp" id="wedding-party">
         <div class="col-xs-12">
           <div class="row-container">
             <span class="line"></span>
@@ -127,23 +236,136 @@
             <span class="line"></span>
           </div>
         </div>
-
         <div class="wedding-party col-xs-12 col-sm-6">
           <h4>Bridesmaids</h4>
-          <img src="images/bridesmaids/kd.jpg"/>
           <div class="wedding-party-row">
+            <img src="images/bridesmaids/kd.jpg"/>
             <h5>Katie Drew Clay</h5>
             <h6>Sister of the Bride/Maid of Honor</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio lorem, mattis at aliquet a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio lorem, mattis at aliquet a.</p>
+            <p>Katie Drew is Norris' older sister and Maid of Honor. Katie Drew currently works as an Account Manager for Twitter in their Atlanta office. Norris has always appreciated her trivia skills and ability to insert perfectly timed movie quotes into everyday conversation.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/callie.jpg"/>
+            <h5>Callie Clay</h5>
+            <h6>Sister of the Bride/Maid of Honor</h6>
+            <p>Callie is Norris' younger sister and Maid of Honor. Callie recently graduated from Auburn University and just started a new job in Atlanta as a Physician Recruiter for Locumtenans.com. Callie loves puppies, sleeping and might actually love Burger King more than she loves Norris. #chickenfries</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/amanda.jpg"/>
+            <h5>Amanda Dempsey</h5>
+            <h6>College Friend</h6>
+            <p>Amanda and Norris were sorority sisters and college roommates. Amanda is a Marriage and Family Therapist for Grow Counseling in Atlanta. She and Norris share a love for Mexican food and Dawson's Creek marathons.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/angela.jpg"/>
+            <h5>Angela Kirkland</h5>
+            <h6>College Friend</h6>
+            <p>Angela and Norris were sorority sisters at UGA. They also studied abroad together in Innsbruck, Austria and worked together at HUNTER for 2 years! Her signature dance move is the "T-Rex."</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/ak.jpg"/>
+            <h5>Anna Kay Nash</h5>
+            <h6>Childhood Friend</h6>
+            <p>Anna Kay and Norris became fast friends in the 7th grade at Stratford. Anna Kay lives in Macon and works for the Medcen Foundation. Norris can always count on AK for the latest gossip and Real Housewives recaps.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/caelyn.jpg"/>
+            <h5>Caelyn Pyles</h5>
+            <h6>College Friend</h6>
+            <p>Caelyn was Norris' freshmen year roommate and first friend at UGA. She is a Realtor with The Faletti Group at Atlanta Fine Homes Sotheby's International Realty. Caelyn has the distinct honor of being the person who introduced Norris and Matt, while Norris was the one that introduced Caelyn to her husband, Stephen. This makes them even.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/catie.jpg"/>
+            <h5>Catie Campbell</h5>
+            <h6>College Friend</h6>
+            <p>Catie and Norris were sorority sisters and college roommates at UGA. Norris is the god mother to her french bulldog puppy, Margot. Catie and Norris live for Thursday night happy hours, LaCroix, and anything produced by Andy Cohen.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/christen.jpg"/>
+            <h5>Christen McCommon</h5>
+            <h6>College Friend</h6>
+            <p>Christen and Norris were sorority sisters and college roommates, as well as roommates after college. Christen works for the Rally Foundation.</p>
+        </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/evan.jpg"/>
+            <h5>Evan Cantrell</h5>
+            <h6>Childhood Friend</h6>
+            <p>Evan was Norris' first friend in Pre-K at Stratford. They  She puts the "Ghost" in "Ghost Rider"</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/kate.jpg"/>
+            <h5>Kate Patterson</h5>
+            <h6>Childhood Friend</h6>
+            <p>Kate is the "4th Clay Sister". Kate and Norris share a love for movie quotes, Broadway musicals and orca whales. Kate has an odd obsesson with animal friendships, like where a tiger cub becomes friends with a lab puppy.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/katie.jpg"/>
+            <h5>Katie Moorhouse</h5>
+            <h6>College Friend</h6>
+            <p>Katie and Norris were sorority sisters and close friends at UGA. They lived together for two years after college.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/bridesmaids/nancy.jpg"/>
+            <h5>Nancy Wilfong</h5>
+            <h6>Childhood Friend</h6>
+            <p>Nancy and Norris have been best friends since Kindergarten.</p>
           </div>
         </div>
         <div class="wedding-party col-xs-12 col-sm-6">
           <h4>Groomsmen</h4>
-          <img src="images/bridesmaids/kd.jpg"/>
           <div class="wedding-party-row">
+            <img src="images/groomsmen/bob.jpg"/>
             <h5>Bob Morrison</h5>
             <h6>Father of the Groom/Best Man</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio lorem, mattis at aliquet a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio lorem, mattis at aliquet a.</p>
+            <p></p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/groomsmen/dexter.jpg"/>
+            <h5>Dexter Mattox</h5>
+            <h6>College Friend</h6>
+            <p>Dexter and Matt were pledge brothers at UGA. Dexter is from St. Simons Island, and currently resides in Augusta, where he is finishing his final year of dental school.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/groomsmen/gamble.jpg"/>
+            <h5>Gamble Cleveland</h5>
+            <h6>Childhood Friend</h6>
+            <p>Gamble and Matt have been friends since kindergarten and attended Marist together. He was Matt’s roommate for two years after college. He currently lives in Atlanta with his wife, Taylor and is an MBA candidate at Emory University. Despite his passion for the outdoors, Gamble is deathly afraid of snakes.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/groomsmen/hall.jpg"/>
+            <h5>Hall McKinley</h5>
+            <h6>Childhood Friend</h6>
+            <p>Hall and Matt have been friends since 7th grade. He also went to Marist and, along with Gamble, was Matt’s roommate for two years after college. He currently lives in Raleigh, NC and works as an analyst for Stryker Orthopaedics. Hall is also an accomplished DJ, performing under the stage name DJ HIV. </p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/groomsmen/nate.jpg"/>
+            <h5>Nate Trower</h5>
+            <h6>College Friend</h6>
+            <p>Nate and Matt were fraternity brothers at UGA. Current roommates. Nate is from Louisville, Kentucky and is a consultant with Capgemini.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/groomsmen/ross.jpg"/>
+            <h5>Ross Wiedemann</h5>
+            <h6>College Friend</h6>
+            <p>Ross and Matt were pledge brothers at UGA and were roommates for two years. He is from Mandeville, Louisiana, and is currently in medical school at LSU.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/groomsmen/taylor.jpg"/>
+            <h5>Taylor Rhett</h5>
+            <h6>Childhood Friend</h6>
+            <p>Taylor and Matt met in 5th grade while playing pee-wee football. They also attended Marist together. Taylor works in wealth management for UBS and resides in Atlanta. Also dates KD.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/groomsmen/tayste.jpg"/>
+            <h5>Taylor Stevens</h5>
+            <h6>Childhood Friend</h6>
+            <p>Taylor and Matt met in 9th grade at Marist. He was born and raised in Atlanta and currently teaches high school and coaches at South Forsyth High School.</p>
+          </div>
+          <div class="wedding-party-row">
+            <img src="images/groomsmen/ted.jpg"/>
+            <h5>Ted Williams</h5>
+            <h6>Childhood Friend</h6>
+            <p>Ted and Matt have been friends since kindergarten. He is currently a medical sales rep and resides in Columbia, South Carolina.</p>
           </div>
         </div>
       </div>
